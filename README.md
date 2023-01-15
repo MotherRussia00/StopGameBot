@@ -1,3 +1,3 @@
 # StopGameBot
-StopGame.ru schedule bot
+StopGame.ru schedule bot"\n"
 Короче в планах поменять с селениума на bf и чтобы он при каждом запросе расписания запрашивал данные с сайта
