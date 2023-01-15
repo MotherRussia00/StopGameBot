@@ -238,11 +238,6 @@ async def make_uved(query: types.CallbackQuery, callback_data: dict):
     time_info = (callback_data['time_callback'])
     time_info = time_info.split("\n")[0]
     time_info = time_info.replace(".",":")
-    print()
-    print()
-    print(time_info)
-    print()
-    print()
     schedule.every().day.at(time_info).do(send_uved(id = query.from_user.id,title_func = strm_title))
     while True:
         await schedule.run_pending()
